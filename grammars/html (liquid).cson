@@ -140,7 +140,7 @@
         'name': 'constant.numeric.liquid'
       }
       {
-        'match': '\\b(break|continue|cycle|assign|increment|decrement|include|form|layout|highlight|highlight_active|json|join|sort|ceil|divided_by|floor|minus|plus|round|times|modulo|money|money_with_currency|money_without_trailing_zeros|money_without_currency|append|camelcase|capitalize|downcase|escape|handleize|md5|newline_to_br|pluralize|prepend|remove|remove_first|replace|replace_first|slice|split|strip|lstrip|rstrip|strip_html|strip_newlines|truncate|truncatewords|uniq|upcase|url_escape|url_param_escape)\\b'
+        'match': '\\b(break|continue|cycle|assign|increment|decrement|include|render|form|layout|highlight|highlight_active|json|join|sort|ceil|divided_by|floor|minus|plus|round|times|modulo|money|money_with_currency|money_without_trailing_zeros|money_without_currency|append|camelcase|capitalize|downcase|escape|handleize|md5|newline_to_br|pluralize|prepend|remove|remove_first|replace|replace_first|slice|split|strip|lstrip|rstrip|strip_html|strip_newlines|truncate|truncatewords|uniq|upcase|url_escape|url_param_escape)\\b'
         'name': 'support.function.liquid'
       }
       {
