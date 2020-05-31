@@ -558,6 +558,12 @@
     'body': 'gist'
     'description': '{%- post_url ${1:path-to-gist} -%}'
     'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/#gist'
+  # Shopify frontend development specific tags
+  'Render':
+    'prefix': 'render'
+    'body': '{%- render \'${1:snippet}\' -%}'
+    'description': 'Renders a snippet from the snippets folder of a theme.'
+    'descriptionMoreURL': 'https://shopify.dev/docs/themes/liquid/reference/tags/theme-tags#render'
   # This is a sample tag just in case someone wants to add more to it
   # More Filters
   # '':
