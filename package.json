@@ -1,8 +1,8 @@
 {
-  "name": "language-liquid",
-  "version": "0.7.0",
+  "name": "language-shopify-liquid",
+  "version": "0.0.0",
   "private": true,
-  "description": "Liquid language support for Atom.",
+  "description": "Liquid language support for Atom with additional Shopify specific tags. Based on 'language-liquid' by Kieran Masterton (https://github.com/kieranmasterton)",
   "keywords": [
     "language",
     "liquid",
@@ -11,8 +11,9 @@
     "markdown",
     "gfm"
   ],
-  "author": "Kieran Masterton <kieran@88mph.com> (https://github.com/kieranmasterton)",
+  "author": "Cam Gould <language-shopify-liquid@elkfox.com> (https://github.com/cam)",
   "contributors": [
+    "Kieran Masterton (https://github.com/kieranmasterton)",
     "David Calhoun (https://github.com/dcalhoun)",
     "Brenton Horne (https://github.com/fusion809)",
     "Sebastian Szturo (https://github.com/SebastianSzturo)",
@@ -23,14 +24,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/puranjayjain/language-liquid"
+    "url": "https://github.com/elkfox/language-shopify-liquid"
   },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "bugs": {
-    "url": "https://github.com/puranjayjain/language-liquid/issues"
+    "url": "https://github.com/elkfox/language-shopify-liquid/issues"
   },
   "dependencies": {}
 }
