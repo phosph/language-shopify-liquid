@@ -1,6 +1,6 @@
 {
   "name": "language-shopify-liquid",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "private": true,
   "description": "Liquid language support for Atom with additional Shopify specific tags. Based on 'language-liquid' by Kieran Masterton (https://github.com/kieranmasterton)",
   "keywords": [
