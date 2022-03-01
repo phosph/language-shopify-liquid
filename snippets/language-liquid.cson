@@ -428,7 +428,7 @@
     'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#liquid'
   'Liquid':
     'prefix': 'liquid'
-    'body': '{%- liquid \n\t when \'${2:foo}\' \n\tThis is a foo\n\t else \n\tThis is not a foo\n\t endcase -%}'
+    'body': '{%- liquid \n\t when \'${2:foo}\' \n\techo \'This is a foo\'\n\t else \n\t\'This is not a foo\'\n\t endcase -%}'
     'description': 'Allows writing multiple tags within one set of delimiters.'
     'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#liquid'
   'Render':
