@@ -423,12 +423,12 @@
   # Shopify frontend development specific tags
   'Layout':
     'prefix': 'layout'
-    'body': '{%- layout \'${1:layout}\' -%}'
-    'description': 'Defines an alternate layout for a template file. Can also be "none" for no parent layout.'
+    'body': '{%- layout none -%}'
+    'description': 'Defines an alternate layout for a template file.'
     'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#liquid'
   'Liquid':
     'prefix': 'liquid'
-    'body': '{%- liquid \n\twhen \'${2:foo}\'\n\t\techo \'This is a foo\'\n\telse\n\t\techo \'This is not a foo\'\nendcase -%}'
+    'body': '{%- liquid \n\twhen \'${2:foo}\'\n\t\techo \'This is a foo\'\n\telse\n\t\techo \'This is not a foo\'\n\tendcase\n-%}'
     'description': 'Allows writing multiple tags within one set of delimiters.'
     'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#liquid'
   'Render':
