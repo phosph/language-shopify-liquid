@@ -428,7 +428,7 @@
     'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#liquid'
   'Liquid':
     'prefix': 'liquid'
-    'body': '{%- liquid \n\t when \'${2:foo}\' \n\techo \'This is a foo\'\n\t else \n\t\'This is not a foo\'\n\t endcase -%}'
+    'body': '{%- liquid \n\twhen \'${2:foo}\'\n\t\techo \'This is a foo\'\n\telse\n\t\techo \'This is not a foo\'\nendcase -%}'
     'description': 'Allows writing multiple tags within one set of delimiters.'
     'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#liquid'
   'Render':
@@ -443,7 +443,7 @@
     'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#section'
   'Style':
     'prefix': 'style'
-    'body': '{%- style %}\n\t.section-selector {\n\t\t	background-color: {{ section.settings.background_color }}\n\t}\n{% endstyle -%}'
+    'body': '{%- style %}\n\t.section-selector {\n\t\tbackground-color: {{ section.settings.background_color }}\n\t}\n{% endstyle -%}'
     'description': 'The Liquid {% style %} tag renders an HTML <style> tag with a Shopify data attribute. Placing color settings within a {% style %} tag allows you to make live color updates from the theme editor without a full page refresh.'
     'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#style'
   # This is a sample tag just in case someone wants to add more to it
