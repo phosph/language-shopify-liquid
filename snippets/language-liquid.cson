@@ -442,7 +442,7 @@
     'description': 'Renders a section from the sections folder of a theme.'
     'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#section'
   'Style':
-    'prefix': 'section'
+    'prefix': 'style'
     'body': '{%- style %}\n\t.section-selector {\n\t\t	background-color: {{ section.settings.background_color }}\n\t}\n{% endstyle -%}'
     'description': 'The Liquid {% style %} tag renders an HTML <style> tag with a Shopify data attribute. Placing color settings within a {% style %} tag allows you to make live color updates from the theme editor without a full page refresh.'
     'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#style'
