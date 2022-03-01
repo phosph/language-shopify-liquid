@@ -92,7 +92,7 @@
     'descriptionMoreURL': 'https://shopify.github.io/liquid/basics/operators/#contains'
   # Tags > Comment
   'comment':
-    'prefix': 'com'
+    'prefix': 'comment'
     'body': '{%- comment %}\n\tThis is a foo\n{% endcomment -%}'
     'description': 'Allows you to leave un-rendered code inside a Liquid template. Any text within the opening and closing comment blocks will not be output, and any Liquid code within will not be executed.'
     'descriptionMoreURL': 'https://shopify.github.io/liquid/tags/comment/'
@@ -420,150 +420,32 @@
     'body': 'url_encode'
     'description': 'Converts any URL-unsafe characters in a string into percent-encoded characters.'
     'descriptionMoreURL': 'https://shopify.github.io/liquid/filters/url_encode/'
-  # Filters from https://jekyllrb.com/docs/templates/
-  'date_to_xmlschema':
-    'prefix': 'date_to_xmlschema'
-    'body': 'date_to_xmlschema'
-    'description': 'Convert a Date into XML Schema (ISO 8601) format.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'date_to_rfc822':
-    'prefix': 'date_to_rfc822'
-    'body': 'date_to_rfc822'
-    'description': 'Convert a Date into the RFC-822 format used for RSS feeds.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'date_to_string':
-    'prefix': 'date_to_string'
-    'body': 'date_to_string'
-    'description': 'Convert a date to short format.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'date_to_long_string':
-    'prefix': 'date_to_long_string'
-    'body': 'date_to_long_string'
-    'description': 'Format a date to long format.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'where':
-    'prefix': 'where'
-    'body': 'where:"${1:string}"'
-    'description': 'Select all the objects in an array where the key has the given value.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'where_exp':
-    'prefix': 'where_exp'
-    'body': 'where_exp: "${1:string}", ${2:condition}'
-    'description': 'Select all the objects in an array where the expression is true.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'group_by':
-    'prefix': 'group_by'
-    'body': 'group_by:"${1:string}"'
-    'description': 'Group an array\'s items by a given property.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'xml_escape':
-    'prefix': 'xml_escape'
-    'body': 'xml_escape'
-    'description': 'Escape some text for use in XML.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'cgi_escape':
-    'prefix': 'cgi_escape'
-    'body': 'cgi_escape'
-    'description': 'CGI escape a string for use in a URL. Replaces any special characters with appropriate %XX replacements.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'uri_escape':
-    'prefix': 'uri_escape'
-    'body': 'uri_escape'
-    'description': 'URI escape a string.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'number_of_words':
-    'prefix': 'number_of_words'
-    'body': 'number_of_words'
-    'description': 'Count the number of words in some text.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'array_to_sentence_string':
-    'prefix': 'array_to_sentence_string'
-    'body': 'array_to_sentence_string'
-    'description': 'Convert an array into a sentence. Useful for listing tags.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'markdownify':
-    'prefix': 'markdownify'
-    'body': 'markdownify'
-    'description': 'Convert a Markdown-formatted string into HTML.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'smartify':
-    'prefix': 'smartify'
-    'body': 'smartify'
-    'description': 'Convert "quotes" into “smart quotes.”'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'scssify':
-    'prefix': 'scssify'
-    'body': 'scssify'
-    'description': 'Convert a Sass- or SCSS-formatted string into CSS.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'slugify':
-    'prefix': 'slugify'
-    'body': 'slugify'
-    'description': 'Convert a string into a lowercase URL "slug". See below for options.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'jsonify':
-    'prefix': 'jsonify'
-    'body': 'jsonify'
-    'description': 'Convert Hash or Array to JSON.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'sample':
-    'prefix': 'sample'
-    'body': 'sample'
-    'description': 'Pick a random value from an array. Optional: pick multiple values.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  # Filters > Array Filters
-  'push':
-    'prefix': 'push'
-    'body': 'push: "${1:string}"'
-    'description': 'Perform operation on an array and not mutate it, but rather make a copy and mutate that.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'pop':
-    'prefix': 'pop'
-    'body': 'pop'
-    'description': 'Perform operation on an array and not mutate it, but rather make a copy and mutate that.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'shift':
-    'prefix': 'shift'
-    'body': 'shift'
-    'description': 'Perform operation on an array and not mutate it, but rather make a copy and mutate that.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'unshift':
-    'prefix': 'unshift'
-    'body': 'unshift: "${1:string}"'
-    'description': 'Perform operation on an array and not mutate it, but rather make a copy and mutate that.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  # Some tags from https://jekyllrb.com/docs/templates/#tags
-  'include':
-    'prefix': 'include'
-    'body': '{%- include \'${1:snippet}\' -%}'
-    'description': 'If you have small page fragments that you wish to include in multiple places on your site, you can use the include tag.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/#includes'
-  'highlight':
-    'prefix': 'highlight'
-    'body': '{%- highlight ${1:language} -%}\n${2:code}\n{%- endhighlight -%}'
-    'description': 'Jekyll has built in support for syntax highlighting of over 60 languages thanks to Rouge. Rouge is the default highlighter in Jekyll 3 and above. To use it in Jekyll 2, set highlighter to rouge and ensure the rouge gem is installed properly.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/'
-  'linenos':
-    'prefix': 'linenos'
-    'body': 'linenos'
-    'description': 'There is a second argument to highlight called linenos that is optional. Including the linenos argument will force the highlighted code to include line numbers.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/#line-numbers'
-  'post_url':
-    'prefix': 'post_url'
-    'body': '{%- post_url ${1:path-to-post} -%}'
-    'description': 'If you would like to include a link to a post on your site, the post_url tag will generate the correct permalink URL for the post you specify.'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/#post-url'
-  'gist':
-    'prefix': 'gist'
-    'body': 'gist'
-    'description': '{%- post_url ${1:path-to-gist} -%}'
-    'descriptionMoreURL': 'https://jekyllrb.com/docs/templates/#gist'
   # Shopify frontend development specific tags
+  'Layout':
+    'prefix': 'layout'
+    'body': '{%- layout \'${1:layout}\' -%}'
+    'description': 'Defines an alternate layout for a template file. Can also be "none" for no parent layout.'
+    'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#liquid'
+  'Liquid':
+    'prefix': 'liquid'
+    'body': '{%- liquid \n\t when \'${2:foo}\' \n\tThis is a foo\n\t else \n\tThis is not a foo\n\t endcase -%}'
+    'description': 'Allows writing multiple tags within one set of delimiters.'
+    'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#liquid'
   'Render':
     'prefix': 'render'
     'body': '{%- render \'${1:snippet}\' -%}'
     'description': 'Renders a snippet from the snippets folder of a theme.'
-    'descriptionMoreURL': 'https://shopify.dev/docs/themes/liquid/reference/tags/theme-tags#render'
+    'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#render'
+  'Section':
+    'prefix': 'section'
+    'body': '{%- section \'${1:section}\' -%}'
+    'description': 'Renders a section from the sections folder of a theme.'
+    'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#section'
+  'Style':
+    'prefix': 'section'
+    'body': '{%- style %}\n\t.section-selector {\n\t\t	background-color: {{ section.settings.background_color }}\n\t}\n{% endstyle -%}'
+    'description': 'The Liquid {% style %} tag renders an HTML <style> tag with a Shopify data attribute. Placing color settings within a {% style %} tag allows you to make live color updates from the theme editor without a full page refresh.'
+    'descriptionMoreURL': 'https://shopify.dev/api/liquid/tags/theme-tags#style'
   # This is a sample tag just in case someone wants to add more to it
   # More Filters
   # '':
